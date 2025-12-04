@@ -75,6 +75,8 @@
     justify-content: left;
     margin-left: 3vh;
     color: white;
+    font-size: clamp(15px, 1.2vw, 25px);
+    text-wrap: nowrap;
 }
 
 .menu a {
@@ -152,6 +154,7 @@
     margin-bottom: 50px;
     background-color:rgb(12, 161, 147);    
     color: white;
+    
 }
 
 .dividas {
@@ -176,10 +179,24 @@
     margin-bottom: 50px;
     background-color:rgb(12, 161, 147);    
     color: white;
+    
 }   
+
+.dividas h1,.investimento h1, .receitas h1 {
+    display: flex;
+    font-size: clamp(20px, 1.5vw, 30px); 
+    align-items: center;
+    
+}
+
+.Saldo h4, .Saldo h5 {
+    font-size: clamp(15px, 1.5vw, 30px); 
+    
+}
+
 .tipos-de-gastos {
     display: flex;
-    justify-content:space-around;
+    justify-content:space-between;
     flex-wrap: wrap;
     gap: 10px;
     text-align: center;
@@ -187,6 +204,7 @@
     box-shadow: 3px 3px 5px 3px #CCC;
     background-color:rgb(12, 161, 147);
     border-radius: 10px;
+     
 }
 .icones {
     color: white;
@@ -196,6 +214,8 @@
     gap: 10px;
     flex-shrink: 1;
     padding: 22px;
+    min-width: 200px;
+    
 }
 .icones i {
     margin: 0 5px; /* Espaço entre os ícones */
@@ -216,10 +236,11 @@
     border-top: 1px solid #ffffff;
 }
 .menu h5{
-
+    display: flex;
     font-size: 10px;
     white-space: nowrap;
     margin-left: 2px;
+
     }
 
 .dividas, .receitas, .investimento {
